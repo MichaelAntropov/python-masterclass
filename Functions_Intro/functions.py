@@ -1,7 +1,7 @@
 import re
 
 
-def multiply(a, b):
+def multiply(a: float, b: float) -> float:
     """
     Multiply two arguments and return the result.
 
@@ -13,7 +13,7 @@ def multiply(a, b):
     return result
 
 
-def is_palindrome(string):
+def is_palindrome(string: str) -> bool:
     """
     Checks if the string (word) is a palindrome.
 
@@ -29,7 +29,7 @@ def is_palindrome(string):
     return string_simplified[::-1] == string_simplified
 
 
-def is_palindrome_sentence(string):
+def is_palindrome_sentence(string: str) -> bool:
     """
     Checks if the string is a palindrome.
 
@@ -44,7 +44,7 @@ def is_palindrome_sentence(string):
     return is_palindrome(string_simplified)
 
 
-def fibonacci(n):
+def fibonacci(n: int) -> int:
     """Return the `n` th Fibonacci number, for positive `n`."""
     if 0 <= n <= 1:
         return n
@@ -61,3 +61,5 @@ def fibonacci(n):
 
 for i in range(36):
     print(i, fibonacci(i))
+
+p = is_palindrome_sentence("ggg")
